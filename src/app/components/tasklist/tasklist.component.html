@@ -1,0 +1,17 @@
+<div class="page-style">
+  <header><h1>TASK APP</h1></header>
+
+  <div class="add-task">
+    <input [(ngModel)]="newTask" placeholder="Add a new task" />
+    <button (click)="addTask()">Add Task</button>
+  </div>
+
+  <div class="filter-search">
+    <input [(ngModel)]="filterText" placeholder="Search tasks" />
+  </div>
+
+  <div class="task" *ngFor="let task of getFilteredTasks(); let i = index">
+    <div class="task-name">{{ task }}</div>
+    <button class="remove-task" (click)="removeTask(i)">✕</button>
+  </div>
+</div>

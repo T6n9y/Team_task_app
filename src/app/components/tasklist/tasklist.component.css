@@ -1,0 +1,41 @@
+.add-task,
+.filter-search {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.task {
+  display: flex;
+  font-size: 1.2em;
+  border-bottom: solid 2px #eeeeee;
+  letter-spacing: 2px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.task:last-of-type {
+  border-bottom-color: #d4caff;
+}
+
+.task-name {
+  flex-grow: 1;
+  line-height: 3.5em;
+  padding-left: 10px;
+  color: #2f2366;
+}
+
+.remove-task {
+  font-size: 1.15em;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  color: #ef5350;
+  cursor: pointer;
+  margin-right: 10px;
+  background: none;
+}
+
+.task:hover .remove-task {
+  visibility: visible;
+}
